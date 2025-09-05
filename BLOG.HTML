@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Quantum Club</title>
+  <style>
+    body{margin:0;font-family:Arial,sans-serif;background:#f8faff;color:#333}
+    nav{background:#4527a0;display:flex;justify-content:center;padding:14px 0;flex-wrap:wrap;position:sticky;top:0;z-index:1000}
+    nav a{color:#fff;padding:12px 20px;text-decoration:none;font-weight:700;font-size:1.1em;position:relative;transition:.3s;border-radius:5px}
+    nav a:hover{background:#311b92;color:#00e5ff}
+    nav a::after{content:"";position:absolute;width:0;height:3px;left:0;bottom:0;background:#00e5ff;transition:width .3s}
+    nav a:hover::after{width:100%}
+    nav a.active,nav a[aria-current=page]{background:#311b92;color:#00e5ff;border-radius:5px}
+    .small-hero{background:linear-gradient(to right,#311b92,#2575fc);color:#fff;text-align:center;padding:3rem 1rem}
+    .container{max-width:1100px;margin:auto;padding:2rem}
+    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
+    .card{background:#fff;padding:1.5rem;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.1);transition:.3s}
+    .card h3{color:#4527a0}
+    .card p{color:#666}
+    .more-content{margin-top:1rem;color:#444;font-size:.95rem}
+    footer{text-align:center;background:#4527a0;color:#fff;padding:1.5rem;margin-top:2rem}
+  </style>
+</head>
+<body>
+  <header class="small-hero">
+    <h1>Our Blog</h1>
+    <p>Updates, stories, and knowledge from the Quantum Club</p>
+  </header>
+  
+  <nav>
+    <a href="HOME.HTML">Home</a>
+    <a href="EVENT.HTML">Events</a>
+    <a href="MEMBER.HTML">Members</a>
+    <a href="JOIN.HTML">Join</a>
+    <a href="ABOUT.HTML">About Us</a>
+    <a href="CONTACT.HTML">Contact</a>
+    <a href="BLOG.HTML" class="active">Blog</a>
+    <a href="RESOURCES.HTML">Resources</a>
+  </nav>
+
+  <main class="container">
+    <div class="grid-3">
+      <div class="card"><h3>Exploring Quantum Computing</h3><p><small>August 25, 2025</small></p><p>Quantum computing is changing the future of technology. Learn how it works and why it matters.</p><div class="more-content" id="blog1"><p>Quantum computing leverages principles of quantum mechanics such as superposition and entanglement to perform computations much faster than classical computers for certain tasks. It has potential applications in cryptography, optimization, AI, and drug discovery.</p><p>While the technology is still in its early stages, major tech companies and research institutes are racing to build scalable quantum machines. This decade may see breakthroughs that bring quantum computing into practical use.</p></div></div>
+      <div class="card"><h3>Highlights from Our Hackathon</h3><p><small>August 10, 2025</small></p><p>Check out the winning projects and innovative solutions developed during our latest hackathon.</p><div class="more-content" id="blog2"><p>Our hackathon brought together students from multiple disciplines to collaborate on solving real-world challenges. The winning team created a quantum-inspired algorithm to optimize traffic flow in urban areas.</p><p>Other projects included quantum-powered simulations for energy efficiency, AI-assisted learning tools, and cybersecurity applications. The event showcased the creativity and potential of our members.</p></div></div>
+      <div class="card"><h3>Meet Our New Members</h3><p><small>July 30, 2025</small></p><p>Get to know the talented new members who have joined our club this semester.</p><div class="more-content" id="blog3"><p>This semester, we welcomed over 40 new members from various departments including Computer Science, Physics, and Electronics. They bring diverse skills and enthusiasm for quantum technology.</p><p>Our onboarding session introduced them to the basics of quantum computing, upcoming events, and opportunities to collaborate on projects. We are excited to see their contributions!</p></div></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Quantum Club, C.V. Raman Global University. All rights reserved.</p>
+  </footer>
+</body>
+</html>

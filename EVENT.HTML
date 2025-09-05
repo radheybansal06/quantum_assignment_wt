@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - Quantum Club</title>
+  <style>
+    body{margin:0;font-family:Verdana,sans-serif;background:#f8faff;color:#222}
+    header{background:linear-gradient(135deg,#6a11cb,#2575fc);color:#fff;text-align:center;padding:25px 0;font-family:'Trebuchet MS',sans-serif}
+    nav{display:flex;justify-content:center;background:#4527a0;flex-wrap:wrap;padding:14px 0;position:sticky;top:0;z-index:1000}
+    nav a{color:#fff;padding:12px 20px;text-decoration:none;font-weight:700;font-size:1.1em;position:relative;transition:.3s;border-radius:5px}
+    nav a:hover{background:#311b92;color:#00e5ff}
+    nav a::after{content:"";position:absolute;width:0;height:3px;left:0;bottom:0;background:#00e5ff;transition:width .3s}
+    nav a:hover::after{width:100%}
+    nav a.active,nav a[aria-current=page]{background:#311b92;color:#00e5ff;border-radius:5px}
+    .hero{background:linear-gradient(rgba(49,27,146,.8),rgba(49,27,146,.8)),url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80) no-repeat center/cover;color:#fff;text-align:center;padding:100px 20px}
+    .hero h1{font-size:3.5em;margin-bottom:15px}
+    .hero p{font-size:1.2em}
+    section{padding:70px 20px;text-align:center}
+    section h2{font-size:2.3em;margin-bottom:20px;color:#4527a0}
+    .cards{display:flex;justify-content:center;flex-wrap:wrap;gap:20px}
+    .card{background:#fff;padding:20px;border-radius:8px;width:280px;box-shadow:0 4px 12px rgba(0,0,0,.15);text-align:left;transition:transform .3s,box-shadow .3s}
+    .card:hover{transform:translateY(-6px);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+    .card h3{margin-top:0;color:#283593}
+    .card p{margin:10px 0}
+    footer{background:#311b92;color:#fff;text-align:center;padding:20px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Quantum Club Events</h1>
+    <p>Workshops • Hackathons • Lectures • Meetups</p>
+  </header>
+
+  <nav>
+    <a href="HOME.HTML">Home</a>
+    <a href="EVENT.HTML" class="active" aria-current="page">Events</a>
+    <a href="MEMBER.HTML">Members</a>
+    <a href="JOIN.HTML">Join</a>
+    <a href="ABOUT.HTML">About Us</a>
+    <a href="CONTACT.HTML">Contact</a>
+    <a href="BLOG.HTML">Blog</a>
+    <a href="RESOURCES.HTML">Resources</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Our Events</h1>
+    <p>Explore exciting opportunities to learn and collaborate with peers & experts.</p>
+  </div>
+
+  <section>
+    <h2>Upcoming Events</h2>
+    <div class="cards">
+      <div class="card"><h3>Quantum Hackathon 2025</h3><p><strong>Date:</strong> november 05, 2025</p><p>Compete in a 24-hour coding challenge to solve quantum-inspired problems.</p></div>
+      <div class="card"><h3>Guest Lecture: Quantum AI</h3><p><strong>Date:</strong> september 2, 2025</p><p>Talk by Dr. Alice Quantum on the future of Artificial Intelligence with quantum computing.</p></div>
+      <div class="card"><h3>Workshop: Qiskit Basics</h3><p><strong>Date:</strong> december 18, 2025</p><p>Hands-on workshop introducing quantum programming using IBM’s Qiskit.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Past Events</h2>
+    <div class="cards">
+      <div class="card"><h3>Quantum Bootcamp 2024</h3><p>A week-long deep dive into quantum mechanics and algorithms.</p></div>
+      <div class="card"><h3>Hack the Future</h3><p>Students teamed up to build innovative projects blending classical & quantum computing.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Quantum Club - C.V. Raman Global University | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
+
+

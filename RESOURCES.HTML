@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resources - Quantum Club</title>
+  <style>
+    :root{--bg:#f8faff;--nav:#4527a0;--nav-dark:#311b92;--accent:#00e5ff;--accent-2:#2575fc;--card-bg:#ffffff;--muted:#666;--text:#222}
+    body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}
+    nav{background:var(--nav);display:flex;justify-content:center;padding:14px 0;flex-wrap:wrap;position:sticky;top:0;z-index:1000}
+    nav a{color:#fff;padding:12px 20px;text-decoration:none;font-weight:700;font-size:1.1em;position:relative;transition:.3s;border-radius:5px}
+    nav a:hover{background:#311b92;color:#00e5ff}
+    nav a::after{content:"";position:absolute;width:0;height:3px;left:0;bottom:0;background:#00e5ff;transition:width .3s}
+    nav a:hover::after{width:100%}
+    nav a.active,nav a[aria-current=page]{background:#311b92;color:#00e5ff;border-radius:5px}
+    header{text-align:center;padding:3rem 1rem;background:linear-gradient(rgba(49,27,146,.8),rgba(49,27,146,.8)),url(quantum-bg.jpg) center/cover no-repeat;color:#fff}
+    header h1{font-size:2.5rem;margin:0}
+    header p{font-size:1.2rem;margin-top:10px;color:#eee}
+    .resources{max-width:1100px;margin:3rem auto;padding:0 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+    .resource-card{background:var(--card-bg);padding:1.5rem;border-radius:12px;box-shadow:0 4px 8px rgba(0,0,0,.1);transition:transform .3s;position:relative}
+    .resource-card:hover{transform:translateY(-5px)}
+    .resource-card h3{color:var(--nav-dark);margin-top:0}
+    .resource-card p{color:var(--muted);margin:.5rem 0 1rem}
+    .more-content{margin-top:10px;color:var(--text);line-height:1.4}
+    footer{background:var(--nav);color:#fff;text-align:center;padding:1rem;margin-top:3rem}
+    footer p{margin:.3rem 0}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Resources</h1>
+    <p>Explore hand-picked tutorials, articles, and tools for Quantum Computing</p>
+  </header>
+  
+  <nav>
+    <a href="HOME.HTML">Home</a>
+    <a href="EVENT.HTML">Events</a>
+    <a href="MEMBER.HTML">Members</a>
+    <a href="JOIN.HTML">Join</a>
+    <a href="ABOUT.HTML">About Us</a>
+    <a href="CONTACT.HTML">Contact</a>
+    <a href="BLOG.HTML">Blog</a>
+    <a href="RESOURCES.HTML" class="active">Resources</a>
+  </nav>
+
+  <section class="resources">
+    <div class="resource-card"><h3>Beginner’s Guide</h3><p>Start your quantum computing journey with easy-to-follow tutorials.</p><div class="more-content"><p>This guide explains qubits, superposition, and entanglement in simple terms, with exercises to strengthen your foundation.</p></div></div>
+    <div class="resource-card"><h3>Research Papers</h3><p>Stay updated with the latest advancements in quantum research.</p><div class="more-content"><p>Includes landmark papers like Shor’s algorithm, Grover’s search, and cutting-edge quantum error correction research.</p></div></div>
+    <div class="resource-card"><h3>Online Courses</h3><p>Enroll in top courses from MIT, IBM, and other institutions.</p><div class="more-content"><p>Recommendations: IBM’s Qiskit course, MIT’s OCW lectures, and Coursera specializations on Quantum Mechanics & Computing.</p></div></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Quantum Club. All Rights Reserved.</p>
+    <p>Email: quantumclub@example.com | Phone: +91 98765 43210</p>
+    <p>Follow us on <a href="#" style="color:var(--accent);text-decoration:none">Instagram</a>, <a href="#" style="color:var(--accent);text-decoration:none">Twitter</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home - Quantum Club</title>
+  <style>
+    :root{--bg:#f8faff;--nav:#4527a0;--nav-dark:#311b92;--accent:#00e5ff;--accent-2:#2575fc;--hero-grad-start:rgba(49,27,146,0.8);--hero-grad-end:rgba(49,27,146,0.8);--card-bg:#ffffff;--muted:#666;--text:#222}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Verdana,sans-serif;line-height:1.6;background:var(--bg);color:var(--text);scroll-behavior:smooth}
+    header{background:linear-gradient(135deg,#6a11cb,#2575fc);color:#fff;padding:18px 12px;text-align:center;font-family:'Trebuchet MS',sans-serif}
+    header h1{margin:0;font-size:1.6rem}
+    header p{margin:6px 0 0;font-size:0.95rem;opacity:.95}
+    nav{display:flex;justify-content:center;background:#4527a0;flex-wrap:wrap;padding:14px 0;position:sticky;top:0;z-index:1000}
+    nav a{color:#fff;padding:12px 20px;text-decoration:none;font-weight:700;font-size:1.1em;position:relative;transition:.3s;border-radius:5px}
+    nav a:hover{background:#311b92;color:#00e5ff}
+    nav a::after{content:"";position:absolute;width:0;height:3px;left:0;bottom:0;background:#00e5ff;transition:width .3s}
+    nav a:hover::after{width:100%}
+    nav a.active,nav a[aria-current=page]{background:#311b92;color:#00e5ff;border-radius:5px}
+    .hero{background:linear-gradient(var(--hero-grad-start),var(--hero-grad-end)),url(digital-9301910_1280.jpg) center/cover no-repeat;color:#fff;text-align:center;padding:110px 18px}
+    .hero .logo{width:120px;height:120px;border-radius:999px;background:#fff;padding:12px;display:inline-grid;place-items:center;margin:0 auto 12px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .hero .logo img{width:86px;height:86px;border-radius:50%}
+    .hero h1{font-size:2.6rem;margin:8px 0 6px}
+    .hero h2{font-size:1.15rem;margin:0 0 14px;color:#e6e9ff;font-weight:500}
+    .hero p{max-width:760px;margin:0 auto 18px;font-size:1.05rem;color:#e6eefc}
+    .hero .cta{display:inline-flex;gap:10px}
+    .btn-primary{background:linear-gradient(45deg,var(--accent),var(--accent-2));color:#00121a;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:800;box-shadow:0 8px 26px rgba(37,117,252,.12);transition:transform .16s,box-shadow .16s}
+    .btn-primary:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(37,117,252,.2)}
+    .btn-secondary{background:rgba(255,255,255,.08);color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid rgba(255,255,255,.06)}
+    .btn-secondary:hover{background:rgba(255,255,255,.12)}
+    .quick-links{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1100px;margin:26px auto 0;padding:0 12px}
+    @media (max-width:980px){.quick-links{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:560px){.quick-links{grid-template-columns:1fr}}
+    .quick-card{background:var(--card-bg);border-radius:12px;padding:18px;text-align:left;box-shadow:0 6px 18px rgba(16,24,40,.06);transition:transform .18s,box-shadow .18s;display:flex;gap:12px;align-items:center}
+    .quick-card:hover{transform:translateY(-8px);box-shadow:0 14px 34px rgba(16,24,40,.12)}
+    .quick-card .icon{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#00121a;font-weight:800;font-size:1.1rem}
+    .quick-card h4{margin:0;font-size:1.05rem}
+    .quick-card p{margin:6px 0 0;color:var(--muted);font-size:.95rem}
+    .teasers{max-width:1100px;margin:28px auto;padding:0 12px;display:grid;grid-template-columns:2fr 1fr;gap:18px}
+    @media (max-width:920px){.teasers{grid-template-columns:1fr}}
+    .teaser-main{background:linear-gradient(180deg,#fff,#f7f9ff);border-radius:12px;padding:18px;box-shadow:0 8px 28px rgba(34,40,60,.04)}
+    .teaser-aside{display:flex;flex-direction:column;gap:12px}
+    .small-card{background:var(--card-bg);padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,.06)}
+    footer{margin-top:34px;background:#311b92;color:#fff;padding:20px 12px;text-align:center;border-top:1px solid rgba(255,255,255,.04)}
+    footer .socials a{margin:0 8px;color:var(--accent);text-decoration:none;font-size:1.1rem}
+    footer .socials a:hover{color:#fff}
+    .muted{color:var(--muted)}
+    .center{text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Quantum Club at<br/>C.V. Raman Global University</h1>
+    <p>Where Curiosity Meets Quantum</p>
+  </header>
+  
+  <nav>
+    <a href="HOME.HTML" class="active" aria-current="page">Home</a>
+    <a href="EVENT.HTML">Events</a>
+    <a href="MEMBER.HTML">Members</a>
+    <a href="JOIN.HTML">Join</a>
+    <a href="ABOUT.HTML">About Us</a>
+    <a href="CONTACT.HTML">Contact</a>
+    <a href="BLOG.HTML">Blog</a>
+    <a href="RESOURCES.HTML">Resources</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="logo">
+      <img src="https://cdn.dribbble.com/users/5446674/screenshots/14782427/media/5c43bf879cc2ed9d9f9452ef59dc7d7a.jpg" alt="Quantum Club Logo" style="width:86px;height:86px;border-radius:50%;">
+    </div>
+    <h1>Welcome to Quantum Club</h1>
+    <h2>Explore quantum ideas, projects and events at CVRGU</h2>
+    <p>Hands-on workshops, guest talks, hackathons and research collaborations — everything a quantum enthusiast needs to grow.</p>
+    <div class="cta">
+      <a class="btn-primary" href="JOIN.HTML">Join Now</a>
+      <a class="btn-secondary" href="EVENT.HTML">See Events</a>
+    </div>
+
+    <div class="quick-links" style="margin-top:30px;">
+      <a class="quick-card" href="EVENT.HTML"><div class="icon">E</div><div><h4>Events</h4><p class="muted">Hackathons, lectures and workshops — upcoming schedules.</p></div></a>
+      <a class="quick-card" href="MEMBER.HTML"><div class="icon">M</div><div><h4>Members</h4><p class="muted">See our student & faculty contributors and how to connect.</p></div></a>
+      <a class="quick-card" href="JOIN.HTML"><div class="icon">J</div><div><h4>Join</h4><p class="muted">Become a member — get invites, resources and mentorship.</p></div></a>
+      <a class="quick-card" href="RESOURCES.HTML"><div class="icon">R</div><div><h4>Resources</h4><p class="muted">Tutorials, links and starter projects for quantum learning.</p></div></a>
+    </div>
+  </section>
+
+  <section aria-label="Latest">
+    <div class="teasers">
+      <div class="teaser-main">
+        <h3 style="margin:0 0 8px">Upcoming: Quantum Hackathon</h3>
+        <p class="muted" style="margin:0 0 12px">A 24-hour challenge for students to prototype solutions using quantum toolkits. Teams, prizes and mentorship.</p>
+        <p style="margin-top:12px"><strong>Where:</strong> Computer Lab A • <strong>When:</strong> 20 Oct 2025</p>
+      </div>
+      <div class="teaser-aside">
+        <div class="small-card"><strong>News</strong><p class="muted" style="margin:8px 0 0;font-size:.95rem">Google reports improvements in error-correction research — read more on Research page.</p></div>
+        <div class="small-card"><strong>Workshop</strong><p class="muted" style="margin:8px 0 0;font-size:.95rem">Intro to Qiskit — 5-week hands-on series starting next month.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:34px;padding-bottom:34px;">
+    <div style="max-width:900px;margin:0 auto;text-align:center">
+      <h3 style="margin:0 0 8px">Want to collaborate or speak at an event?</h3>
+      <p class="muted" style="margin:0 0 14px">Drop us a message and we'll get back to you.</p>
+      <a class="btn-primary" href="contact.html">Contact Us</a>
+    </div>
+  </section>
+
+  <footer>
+    <div style="max-width:1100px;margin:0 auto">
+      <p style="margin:0">&copy; 2025 Quantum Club - C.V. Raman Global University</p>
+      <div class="socials" style="margin-top:8px"><a href="#" title="Website">🌐</a><a href="#" title="Twitter">🐦</a><a href="#" title="LinkedIn">💼</a></div>
+    </div>
+  </footer>
+</body>
+</html>
